@@ -43,7 +43,7 @@ exports.handler = function (event, context, callback) {
         function download(next) {
             // Download the image from S3 into a buffer.
             s3.getObject({
-                'Bucket': "sigma-s3-thumb-input",
+                'Bucket': "indunil4",
                 'Key': srcKey
             }, next);
         },
