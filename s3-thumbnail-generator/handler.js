@@ -72,7 +72,7 @@ exports.handler = function (event, context, callback) {
             // Stream the transformed image to a different S3 bucket.
             s3.putObject({
                 "Body": data,
-                "Bucket": "thumbnailoutput",
+                "Bucket": "indunil3",
                 "Key": dstKey,
                 "ACL": "public-read",
                 "Metadata": {
